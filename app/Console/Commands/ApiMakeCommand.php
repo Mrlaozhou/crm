@@ -42,7 +42,7 @@ class ApiMakeCommand extends Command
         // -- 参数获取
         $param          =   $this->argument('name') ?? null;
         // ---- 参数不存在
-        is_null($param) && exit($this->warn('Place enter the name you need create.'));
+        is_null($param) && exit($this->warn('Please enter the name you need create.'));
         // -- 参数解析
         $param          =   array_map( 'ucfirst' ,explode( '/', $param ) );
         // ---- 文件全路径
